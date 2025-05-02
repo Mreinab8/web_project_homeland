@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+}
+
+.page {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__text {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #ccc;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.main__title {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.main__subtitle {
+  font-size: 18px;
+  text-align: center;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.main__image {
+  width: 100%;
+  max-width: 960px;
+  height: auto;
+  margin-bottom: 40px;
+  border-radius: 8px;
+}
+
+.main__quote {
+  max-width: 800px;
+  margin-bottom: 40px;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.main__quote-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.main__quote-text {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.main__quote-author {
+  font-size: 14px;
+  color: #bbb;
+  text-align: right;
+}
+
+.main__description {
+  max-width: 800px;
+  text-align: left;
+  font-size: 14px;
+  padding: 0 20px;
+  margin-bottom: 60px;
+}
+
+.footer__text {
+  font-size: 12px;
+  color: #888;
+  text-align: center;
+}
+
+/* Media Query para tablets */
+@media screen and (max-width: 1024px) {
+  .main__title {
+    font-size: 36px;
+  }
+
+  .main__quote-title {
+    font-size: 20px;
+  }
+
+  .main__quote-text {
+    font-size: 15px;
+  }
+}
+
+/* Media Query para móviles */
+@media screen and (max-width: 768px) {
+  .page {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .main__title {
+    font-size: 28px;
+  }
+
+  .main__subtitle {
+    font-size: 16px;
+  }
+
+  .main__quote-title {
+    font-size: 18px;
+  }
+
+  .main__description {
+    font-size: 13px;
+  }
+
+  .main__image {
+    max-width: 100%;
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .page {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .main__title {
+    font-size: 24px;
+  }
+
+  .main__subtitle {
+    font-size: 14px;
+  }
+
+  .main__quote-title {
+    font-size: 16px;
+  }
+
+  .main__quote-text,
+  .main__description {
+    font-size: 12px;
+  }
+
+  .main__image {
+    max-width: 100%;
+    border-radius: 0;
+  }
+}
