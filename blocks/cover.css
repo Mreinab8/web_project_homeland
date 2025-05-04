@@ -1,0 +1,45 @@
+.cover {
+    max-width: 960px;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+  }
+  
+  .cover__title {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #ffffff;
+    margin: 0 0 20px;
+    text-align: center;
+  }
+  
+  .cover__subtitle {
+    font-size: 18px;
+    color: #cccccc;
+    margin: 0 0 40px;
+    text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .cover__title {
+      font-size: 36px;
+    }
+  
+    .cover__subtitle {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 425px) {
+    .cover__title {
+      font-size: 28px;
+    }
+  
+    .cover__subtitle {
+      font-size: 14px;
+    }
+  }
+  

@@ -1,0 +1,166 @@
+.place {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 48px 40px;
+  margin-bottom: 80px;
+}
+
+.place__title {
+  font-size: 72px;
+  line-height: 1.06;
+  font-weight: 900;
+  margin: 0;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.place__artist {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: end;
+}
+
+.place__artist-heading {
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 2px;
+  color: #aaaaaa;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+}
+
+.place__artist-name {
+  font-size: 18px;
+  line-height: 1.22;
+  margin: 0;
+}
+
+.place__image {
+  width: 100%;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.place__text {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.place__paragraph {
+  font-size: 18px;
+  line-height: 1.63;
+  margin: 0 0 25px;
+  white-space: normal;
+}
+
+.place__paragraph:last-of-type {
+  margin-bottom: 0;
+}
+
+.place__button {
+  grid-column: 1;
+  grid-row: 3;
+  background-color: #0063cc;
+  color: white;
+  border: none;
+  padding: 13px 20px;
+  font-size: 18px;
+  line-height: 1.22;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: fit-content;
+}
+
+.place__button:hover {
+  background-color: #0056b3;
+}
+
+.place__image-placeholder {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: #c4c4c4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6b6b6b;
+  font-size: 18px;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px) {
+  .place__title {
+    font-size: 60px;
+  }
+
+  .place__paragraph {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .place {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    margin-bottom: 60px;
+  }
+
+  .place__title {
+    font-size: 42px;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .place__artist {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: start;
+  }
+
+  .place__image {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .place__text {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .place__button {
+    grid-column: 1;
+    grid-row: 5;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .place {
+    grid-gap: 20px;
+    margin-bottom: 48px;
+  }
+
+  .place__title {
+    font-size: 32px;
+  }
+
+  .place__paragraph {
+    font-size: 14px;
+  }
+
+  .place__button {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .place {
+    grid-gap: 16px;
+  }
+
+  .place__title {
+    font-size: 28px;
+  }
+}
