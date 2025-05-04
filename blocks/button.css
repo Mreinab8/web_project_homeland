@@ -1,6 +1,6 @@
 .button {
-    background: linear-gradient(90deg, #0278FE 0%, #003A7B 100%);
-    color: #fff;
+    background: linear-gradient(90deg, #0278FE 0%, #003A7B 99.98%);
+
     font-family: 'Inter', sans-serif;
     font-size: 18px;
     font-weight: 600;
@@ -16,5 +16,5 @@
 
 .button:hover {
     opacity: 0.8;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.35);
+    box-shadow: 5px 5px 10px 0px #00000040;
 }
